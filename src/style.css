@@ -1,0 +1,68 @@
+.header-content {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(44, 38, 38);
+  line-height: 3.5rem;
+  padding: 0 2rem 0 2rem;
+}
+.header-content .envato {
+  color: white;
+}
+.header-content .market {
+  color: green;
+}
+
+.nav-bar {
+  background-color: green;
+  line-height: 4rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: auto auto auto auto;
+  padding: 0 2rem 0 2rem;
+}
+.nav-bar .maido {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+.nav-bar .nav-class {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: large;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.second-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto auto;
+}
+.second-row .item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(../../images/second-row_item1.jpg);
+  height: 30rem;
+}
+.second-row .item2 {
+  background-image: url(../../images/second-row_item1.jpg);
+  height: auto;
+}
+.second-row .item3 {
+  background-image: url(../../images/second-row_item1.jpg);
+  height: auto;
+}
+.second-row .item4 {
+  background-image: url(../../images/second-row_item1.jpg);
+  height: auto;
+}
+.second-row .item5 {
+  background-image: url(../../images/second-row_item1.jpg);
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

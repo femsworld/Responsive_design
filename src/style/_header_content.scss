@@ -1,0 +1,14 @@
+.header-content{
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44, 38, 38);
+    line-height: 3.5rem; //gives the height and centers the items 
+    .envato{
+        color: white;
+    }
+    .market{
+        color: green;
+    }
+    padding: 0 2rem 0 2rem;
+}
