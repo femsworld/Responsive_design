@@ -1,0 +1,23 @@
+.sixth-row{
+    display: grid;
+    // grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .item1-row6{
+        // grid-column-start: 1;   
+        // grid-column-end: 3;
+        // grid-row-start: 1;
+        // grid-row-end: 3;
+        width: 100%;
+        background-image: url(../../images/six-row_item2.jpg);
+        height: 30rem;
+        border-radius: 2rem;
+    }
+    .item2-row6{
+        background-image: url(../../images/six-row_item2.jpg);
+        height: auto;
+        border-radius: 2rem;
+    }
+}
