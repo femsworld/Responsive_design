@@ -1,0 +1,49 @@
+@use "../variables/colors";
+
+footer {
+  color: colors.$light-text;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  & p {
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(30) infinite alternate, blinking 0.1s infinite;
+    border-right: 1px solid white;
+  }
+  & form {
+    display: flex;
+    justify-content: center;
+    & input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      width: 30%;
+      transition: width 1s linear;
+      text-align: center;
+      &:focus {
+        outline: none;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-right: none;
+  }
+  50% {
+    border-right: 1px solid white;
+  }
+}

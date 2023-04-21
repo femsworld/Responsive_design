@@ -1,69 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <header class="header-content">
-          <div>
-            <span class="envato">envato</span>
-            <span class="market">market</span>
-          </div>
-          <div>
-            <button>Buy now</button>
-          </div>
+    <header>
+        <div>
+            <img src="https://maido-dark.fueko.net/content/images/2020/06/maido.svg" alt="Maido">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="about">About</a>
+            <a href="feature">Features</a>
+            <a href="feature">Style Guide</a>
+            <a href="feature">Newsletter</a>
+            <a href="feature">Contact</a>
+            <a href="feature">Get Theme</a>
+            <a href="feature">Sign in</a>
+            <i class="fa fa-search"></i>
+        </nav>
     </header>
-      <nav class="nav-bar">
-        <div class="maido">Maido</div>
-        <ul class="nav-class">
-          <li>Membership</li>
-          <li>Features</li>
-          <li>Style Guide</li>
-          <li>Newsletter</li>
-          <li>Contacts</li>
-          <li>Get Theme</li>
-          <li>.</li>
-          <li>Sign in</li>
-          <li><button>Sign Up</button></li>
-        </ul>
-      </nav>
-      <section class="second-row">
-        <div class="item1-row2">item1</div>
-        <div class="item2-row2">item2</div>
-        <div class="item3-row2">item3</div>
-        <div class="item4-row2">item4</div>
-        <div class="item5-row2">item5</div>
-      </section>
+    <main>
+        <section class="masonry">
+            <article class="mansonry__card">
+                <button>Pinned</button>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
+                <button>Pinned</button>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
+                <div class="mansonry__card__button">
+                    <button>Pinned</button>
+                </div>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
 
-      <section class="third-row">Third Row</section>
+                <button>Pinned</button>
 
-      <section class="fourth-row">Fourth Row</section>
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
+            <article class="mansonry__card">
 
-      <section class="fifth-row">Fifth Row</section>
-      <section>
-        <section id="sixth-row_parag">
-        <p class="sixth-row_parag">YOU REALLY MUST SEE OUR EARLIER ARTICLES</p>
+                <button>Pinned</button>
+
+                <div class="mansonry__card__text">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, modi?</h3>
+                </div>
+            </article>
         </section>
-        <section class="sixth-row">
-          <div class="item1-row6">item1</div>
-          <div class="item2-row6">item2</div>
+        <section class="blog">
+            <article>
+                <div class="blog__button__group">
+                    <button>Case Study</button>
+                    <button>Open Space</button>
+                </div>
+                <div class="blog__content">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span>&rarr;</span></h3>
+                    <sub>Lorem ipsum dolor sit.</sub>
+                </div>
+            </article>
+            <article>
+                <div class="blog__button__group">
+                    <button>Case Study</button>
+                    <button>Open Space</button>
+                </div>
+                <div class="blog__content">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <sub>Lorem ipsum dolor sit.</sub>
+                </div>
+            </article>
+            <article>
+                <div class="blog__button__group">
+                    <button>Case Study</button>
+                    <button>Open Space</button>
+                </div>
+                <div class="blog__content">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <sub>Lorem ipsum dolor sit.</sub>
+                </div>
+            </article>
         </section>
-      </section>
-
-      <section class="seventh-row">
-        <div class="item1-row7">item1</div>
-        <div class="item2-row7">item2</div>
-        <div class="item3-row7">item2</div>
-      </section>
-
-      <section class="eighth-row">
-        <button class="eighth-row_btn">LOAD MORE</button>
-      </section>
-        
+    </main>
+    <footer>
+        <p>Subscribe to get more information .</p>
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Your email">
+        </form>
+    </footer>
 </body>
-<footer></footer>
+
 </html>
