@@ -139,14 +139,127 @@
 }
 .sixth-row .item1-row6 {
   width: 100%;
+  position: relative;
   background-image: url(../../images/six-row_item2.jpg);
   height: 30rem;
   border-radius: 2rem;
 }
 .sixth-row .item2-row6 {
+  position: relative;
   background-image: url(../../images/six-row_item2.jpg);
   height: auto;
   border-radius: 2rem;
+}
+
+.item1-row6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 69, 129, 0.5);
+  border-radius: 2rem;
+}
+
+.item2-row6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(180, 120, 52, 0.9);
+  border-radius: 2rem;
+}
+
+#sixth-row_parag {
+  text-align: center;
+}
+
+sixth-row_parag {
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.seventh-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.seventh-row .item1-row7 {
+  width: 100%;
+  position: relative;
+  background-image: url(../../images/seventh-row_item1.jpg);
+  height: 30rem;
+  border-radius: 2rem;
+}
+.seventh-row .item2-row7 {
+  position: relative;
+  background-image: url(../../images/seventh-row_item2.jpg);
+  height: auto;
+  border-radius: 2rem;
+}
+.seventh-row .item3-row7 {
+  position: relative;
+  background-image: url(../../images/seventh-row_item3.jpg);
+  height: auto;
+  border-radius: 2rem;
+}
+.seventh-row .item1-row7::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(141, 136, 136, 0.4);
+  border-radius: 2rem;
+}
+.seventh-row .item2-row7::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(158, 79, 158, 0.5);
+  border-radius: 2rem;
+}
+.seventh-row .item3-row7::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(141, 136, 136, 0.4);
+  border-radius: 2rem;
+}
+
+.eighth-row {
+  align-items: center;
+  text-align: center;
+  line-height: 15rem;
+  margin: 0;
+  padding: 0;
+}
+
+.eighth-row_btn {
+  width: 100%;
+  margin: 0;
+  height: 10rem; /* Set the height of the button */
+  padding: 5rem 0; /* Add top and bottom padding to increase the size of the button */
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
