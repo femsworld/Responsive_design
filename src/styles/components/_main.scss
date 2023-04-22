@@ -1,6 +1,7 @@
 @use "../variables/colors";
 @use "../variables/fonts";
 @use "../variables/spaces";
+@use "../variables/heights";
 
 .masonry{
   display: grid;
@@ -30,16 +31,6 @@
       height: 30rem;
       border-radius: spaces.$card-border-radius;
       position: relative;
-      &::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-       background: rgba(205, 196, 23, 0.85);
-        border-radius: 2rem;
-      }
   }
   & article:nth-child(2){
   & h3 {
@@ -82,8 +73,26 @@ flex-direction: column;
 gap: 1em;
 padding: 1em;
 justify-content: center;
-& article {
+& article:nth-child(1) {
   background-image: url("../../../images/third-row_item1.jpg"),
+    linear-gradient(rgba(74, 46, 26, 0.402), #423f2680);
+  background-position: center;
+  padding: 4em;
+  border-radius: spaces.$card-border-radius;
+  background-size: 100%;
+  transition: all 0.5s ease-in-out;
+}
+& article:nth-child(2) {
+  background-image: url("../../../images/third-row_item1.jpg"),
+    linear-gradient(rgba(74, 46, 26, 0.402), #423f2680);
+  background-position: center;
+  padding: 4em;
+  border-radius: spaces.$card-border-radius;
+  background-size: 100%;
+  transition: all 0.5s ease-in-out;
+}
+& article:nth-child(3) {
+  background-image: url("../../../images/third-row_item3.jpg"),
     linear-gradient(rgba(74, 46, 26, 0.402), #423f2680);
   background-position: center;
   padding: 4em;
@@ -110,4 +119,87 @@ justify-content: center;
     }
   }
 }
+}
+
+.post__card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+  & article {
+    color: colors.$light-text;
+    border-radius: spaces.$card-border-radius;
+    padding: 1em;
+  }
+  & article:hover {
+    //margin-top: -10%;
+    transform: translateY(-2%);
+  }
+  
+    & article:nth-child(1){
+    & h3 {
+      font-size: fonts.$h3-small;
+    }
+        width: 100%;
+        position: relative;
+        background-image: url(../../../images/six-row_item2.jpg);
+        height: heights.$post-card-height;
+        border-radius: spaces.$card-border-radius;
+        }
+    & article:nth-child(2){
+      & h3 {
+            font-size: fonts.$h3-small;
+          }
+          width: 100%;
+          position: relative;
+          background-image: url(../../../images/six-row_item2.jpg);
+          height: heights.$post-card-height;
+          border-radius: spaces.$card-border-radius;
+    }
+}
+
+.greeting__card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+  & article {
+    color: colors.$light-text;
+    border-radius: spaces.$card-border-radius;
+    padding: 1em;
+  }
+  & article:hover {
+    //margin-top: -10%;
+    transform: translateY(-2%);
+  }
+    & article:nth-child(1){
+    & h3 {
+      font-size: fonts.$h3-small;
+    }
+        width: 100%;
+        position: relative;
+        background-image: url(../../../images/six-row_item2.jpg);
+        height: heights.$post-card-height;
+        border-radius: spaces.$card-border-radius;
+        }
+    & article:nth-child(2){
+      & h3 {
+            font-size: fonts.$h3-small;
+          }
+          width: 100%;
+          position: relative;
+          background-image: url(../../../images/six-row_item2.jpg);
+          height: heights.$post-card-height;
+          border-radius: spaces.$card-border-radius;
+    }
+    & article:nth-child(3){
+      & h3 {
+            font-size: fonts.$h3-small;
+          }
+          width: 100%;
+          position: relative;
+          background-image: url(../../../images/six-row_item2.jpg);
+          height: heights.$post-card-height;
+          border-radius: spaces.$card-border-radius;
+    }
 }
