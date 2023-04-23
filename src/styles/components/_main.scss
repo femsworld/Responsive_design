@@ -203,3 +203,50 @@ justify-content: center;
           border-radius: spaces.$card-border-radius;
     }
 }
+
+.load__more{
+    align-items: center;
+    text-align: center;
+    line-height: 10rem;
+    margin: 0;
+    padding: 0;
+    & button {
+    width: 100%;
+    margin: 0;
+    height: 5rem; /* Set the height of the button */
+    border-radius: 2rem;
+    font-size: spaces.$load-more-btn-text;
+    background-color: colors.$light-text;
+    font-weight: bold;
+    }
+    & button:hover {
+      transform: translateY(-2%);
+      background-color: colors.$load-more-btn-hoover;
+    }
+}
+
+.Subscribe__section {
+  width: 50%;
+  margin: 0 auto;
+  & h3{
+    font-size: fonts.$h3-medium;
+    align-items: center;
+  }
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 2rem; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 50%; /* Stay at the top */
+  left: 0;
+  background-color: colors.$light-text; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  & #sidenav{
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  }
+}

@@ -5,8 +5,10 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: fit-content;
+  // width: 100%;
+  justify-content: center;
   & p {
-    font-size: 3em;
+    font-size: 2rem;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 4s steps(30) infinite alternate, blinking 0.1s infinite;
