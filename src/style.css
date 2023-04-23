@@ -233,31 +233,23 @@ header nav i {
   font-weight: bold;
 }
 .load__more button:hover {
-  transform: translateY(-2%);
   background-color: #ff9ed8;
 }
 
-.Subscribe__section {
-  width: 50%;
-  margin: 0 auto;
-}
-.Subscribe__section h3 {
-  font-size: 1.5em;
-  align-items: center;
-}
-
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 2rem; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 50%; /* Stay at the top */
+  line-height: 2rem;
+  height: 100vh;
+  width: 2rem;
+  position: fixed;
+  top: 0;
   left: 0;
-  background-color: #ebebeb; /* Black */
+  background-color: #ebebeb;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
-.sidenav #sidenav {
+.sidenav p {
+  margin-top: 20rem;
+  text-align: center;
   transform: rotate(-90deg);
   transform-origin: left top;
   white-space: nowrap;
@@ -267,14 +259,16 @@ footer {
   color: #ebebeb;
   display: flex;
   flex-direction: column;
-  max-width: fit-content;
-  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 footer p {
+  max-width: 40%;
   font-size: 2rem;
+  margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 4s steps(30) infinite alternate, blinking 0.1s infinite;
+  animation: typing 3s steps(20) infinite alternate, blinking 0.1s infinite;
   border-right: 1px solid white;
 }
 footer form {
@@ -288,10 +282,22 @@ footer form input {
   width: 30%;
   transition: width 1s linear;
   text-align: center;
+  margin-top: 1rem;
 }
 footer form input:focus {
   outline: none;
   width: 50%;
+}
+
+.subscribe {
+  margin: 2rem auto;
+  width: 15%;
+  height: 4rem;
+}
+
+.subscribe:hover {
+  transform: translateY(-2%);
+  background-color: #ff9ed8;
 }
 
 @keyframes typing {
@@ -299,7 +305,7 @@ footer form input:focus {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 40%;
   }
 }
 @keyframes blinking {
